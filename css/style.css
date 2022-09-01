@@ -19,7 +19,7 @@ height: 100vh;
 html,
 body {
   font-family: "Open Sans", sans-serif;
-  background: #ecf0f1;
+  background: #EAFAF1;
 }
 
 h1,
@@ -105,14 +105,44 @@ li {
 */
 /*vp*/
 
+.connexion-presentation {
+	display: flex;
+	/*background-color: gray;*/
+	align-items: center;
+	
+}
+
+.connexion-form{
+	width:1100px;
+	padding-left:25px;
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+	background-color: #D1F2EB;
+	height: 250px;
+	
+}
+
+.btn-connecter{
+	margin-top: 15px;
+	margin-left: 70px;
+}
+
+/*.connexion-form h4{
+	padding: 0 20px 0 20px;
+}
+*/
 .vp {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   padding-top: 5rem;
-  height: 100vh;
+  padding-right:25px;
+  padding-left:25px;
+  height: 80vh;
   background-image: url(../img/image-3.jpg);
   background-size: cover;
+  margin-right:25px;
 }
 
 .vp h1 {
@@ -185,12 +215,69 @@ li {
   padding-top: 0.5rem;
   color: black;
 }
+
+.contact {
+    padding: 5rem 1rem 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.title {
+	display: block;
+	margin: 1.5rem auto;
+	 padding: 0.5rem 7rem;
+}
+
+.contact-form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    /*width: 100%; /*pour prendre toute l'espace dispo*/
+
+}
+
+.contact-form input {
+    padding: 1rem;
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: #333;
+    font-size: 1rem;
+    color: white;
+    outline: 0;/*retirer le cadre autour des input- !!!pas recommander*/
+}
+
+
+.contact-form-button {
+    display: block;/*afficher la div comme bloc*/
+    margin: 1.5rem auto;/*pour center la div*/
+    border-radius: 30px;
+    background: green;
+    font-weight: 700;
+    border: 0;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form-button:hover {
+    background: gray;
+}
+
+
+
+
+
+
+
 /*footer*/
 
 footer {
   background: #666;
   text-align: center;
-  height: 80px;
+  height: 65px;
 }
 
 footer p {
@@ -207,7 +294,7 @@ footer i:hover {
   color: white;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 800px){
 	
 	.container{
 		display:grid;
@@ -241,6 +328,15 @@ footer i:hover {
   padding: 1px;
   /*flex: auto; /*chaque li prend toute la place qu'il lui faut*/
 }
+
+.connexion-presentation {
+	display: grid;
+	/*background-color: gray;*/
+	/*align-items: center;*/
+	
+}
+
+
 
 .vp {
   /*display: flex;
@@ -296,18 +392,10 @@ footer i:hover {
 }
 
 .feature {
-  margin: 0px;
-  
-  /*text-align: center;
-  border: 1px solid #444;
-  background: white;
-  width: 100%;*/
-  height: 700px;
-  /*color: #555;*/
-  /*margin-bottom: 10px;*/
-  margin: 5px 5px 5px 8px;
-  
- display: grid;
+  margin: 0 5px 5px 10px;
+  /*width: 100%;*/
+  height: 600px;
+  display: grid;
   
 }
 
