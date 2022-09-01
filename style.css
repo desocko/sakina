@@ -1,0 +1,404 @@
+/*reset*/
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+	display:grid;
+	
+height: 100vh;		
+  margin: 1200px;
+  margin: auto;
+}
+
+/*general*/
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #EAFAF1;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+strong {
+  color: green;
+  font-size: 1.8rem;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.separator {
+  width: 220px;
+  height: 10px;
+  background: black;
+}
+
+li {
+  list-style: none;
+}
+
+/*header*/
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background: green;
+}
+
+.header-content {
+  display: flex;
+  flex-flow: row;
+  /* justify-content: space-between;*/
+  /*margin: 0.3rem;/*/
+}
+
+.header-content-text {
+  padding: 1rem 2rem 0 1rem;
+}
+
+.header-content-img {
+  width: 50px;
+  height: 50px;
+  margin-top: 0.5rem;
+  border-radius: 100%;
+  margin-left: 0.5rem;
+}
+
+.header ul {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  /*margin: 1rem 2rem;*/
+  font-weight: 700;
+  height: 68px;
+  margin-right: 0.3rem;
+}
+
+.header ul li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 1.5rem;
+  flex: auto; /*chaque li prend toute la place qu'il lui faut*/
+}
+
+.header ul li:hover {
+  /* color: white;*/
+  background: #ecf0f1;
+}
+/*
+.header ul li a:hover {
+  background: green;
+}
+*/
+/*vp*/
+
+.connexion-presentation {
+	display: flex;
+	/*background-color: gray;*/
+	align-items: center;
+	
+}
+
+.connexion-form{
+	width:1100px;
+	padding-left:25px;
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+	background-color: #D1F2EB;
+	height: 250px;
+	
+}
+
+.btn-connecter{
+	margin-top: 15px;
+	margin-left: 70px;
+}
+
+/*.connexion-form h4{
+	padding: 0 20px 0 20px;
+}
+*/
+.vp {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 5rem;
+  padding-right:25px;
+  padding-left:25px;
+  height: 80vh;
+  background-image: url(../img/image-3.jpg);
+  background-size: cover;
+  margin-right:25px;
+}
+
+.vp h1 {
+  color: white;
+}
+
+.vp p {
+  color: white;
+}
+
+/*activites*/
+.activites {
+  padding: 10rem 1rem;
+  background: #ecf0f1;
+}
+
+.activites h2 {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+.activites-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.activites-elem {
+  border: 0.5px solid rgb(211, 211, 211);
+  background: white;
+  margin: 2rem;
+  flex: 1;
+}
+
+.activites-elem-img {
+  width: 100%;
+  height: 250px;
+}
+
+.activites-elem p {
+  padding: 2rem;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.feature {
+  margin: 0 5rem 5rem 5rem;
+  flex: 1;
+  text-align: center;
+  border: 1px solid #444;
+  background: white;
+  width: 100%;
+  height: 200px;
+  color: #555;
+}
+
+.feature p {
+  padding-bottom: 3rem;
+}
+
+.feature i {
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  color: black;
+}
+
+.contact {
+    padding: 5rem 1rem 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.title {
+	display: block;
+	margin: 1.5rem auto;
+	 padding: 0.5rem 7rem;
+}
+
+.contact-form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    /*width: 100%; /*pour prendre toute l'espace dispo*/
+
+}
+
+.contact-form input {
+    padding: 1rem;
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: #333;
+    font-size: 1rem;
+    color: white;
+    outline: 0;/*retirer le cadre autour des input- !!!pas recommander*/
+}
+
+
+.contact-form-button {
+    display: block;/*afficher la div comme bloc*/
+    margin: 1.5rem auto;/*pour center la div*/
+    border-radius: 30px;
+    background: green;
+    font-weight: 700;
+    border: 0;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form-button:hover {
+    background: gray;
+}
+
+
+
+
+
+
+
+/*footer*/
+
+footer {
+  background: #666;
+  text-align: center;
+  height: 65px;
+}
+
+footer p {
+  color: white;
+  font-weight: 100;
+}
+
+footer i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+footer i:hover {
+  color: white;
+}
+
+@media screen and (max-width: 800px){
+	
+	.container{
+		display:grid;
+	}
+	
+	.header {
+  display: grid;
+}
+
+.header-content {
+  display: grid;
+  /*flex-flow: row;
+  /* justify-content: space-between;*/
+  /*margin: 0.3rem;/*/
+}
+
+.header ul {
+  display: grid;
+  /*flex-flow: row nowrap;*/
+  align-items: center;
+  /*margin: 1rem 2rem;*/
+  /*font-weight: 700;*/
+  height: 68px;
+  /*margin-right: 0.3rem;*/
+}
+
+.header ul li {
+  display: grid;
+  /*align-items: center;*/
+  /*height: 100%;*/
+  padding: 1px;
+  /*flex: auto; /*chaque li prend toute la place qu'il lui faut*/
+}
+
+.connexion-presentation {
+	display: grid;
+	/*background-color: gray;*/
+	/*align-items: center;*/
+	
+}
+
+
+
+.vp {
+  /*display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 5rem;
+  height: 100vh;
+  background-image: url(../img/image-3.jpg);
+  /*background-size: cover;*/
+  /*margin-top:300px;*/
+}
+
+/*.activites {
+  padding: 10rem 1rem;
+  background: #ecf0f1;
+}
+
+.activites h2 {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+*/
+.activites-list {
+  display: grid;
+  /*flex-flow: row nowrap;
+  justify-content: space-between;*/
+}
+/*
+.activites-elem {
+  border: 0.5px solid rgb(211, 211, 211);
+  background: white;
+  margin: 2rem;
+  /*flex: 1;*/
+}
+/*
+.activites-elem-img {
+  width: 100%;
+  height: 250px;
+}
+
+.activites-elem p {
+  padding: 2rem;
+  text-align: center;
+}
+*/
+
+.features {
+  /*display: grid;*/
+ /* flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;*/
+}
+
+.feature {
+  margin: 0 5px 5px 10px;
+  /*width: 100%;*/
+  height: 600px;
+  display: grid;
+  
+}
+
+
+  
+}
