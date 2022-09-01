@@ -28,12 +28,39 @@
         <h2 class="header-content-text">Solidarité Sakina</h2>
 		</div>
 		<ul id="header-ul">
-        <li><a href="#">Qui sommes nous</a></li>
-        <li><a href="#">Nos activités</a></li>
-        <li><a href="">Nous contacter</a></li>
+        <li><a href="#vp">Qui sommes nous</a></li>
+        <li><a href="#activites">Nos activités</a></li>
+        <li><a href="#contact">Nous contacter</a></li>
 		</ul>
     </header>
-    <section class="vp">
+	
+	
+	
+    <section class="connexion-presentation">
+	
+		<div class="connexion-form">
+	  <h4>Merci de vous connecter ou de vous inscrire : </h4><br>
+				
+				
+                <form name="monFormulaire"  action="index.php" method="post">
+                    <p><label for="nomUtilisateur"> Nom utilisateur : </label>
+                        <input type="text" name="nomUtilisateur" id="nomUtilisateur" required />
+                    </p>
+                    <p><label for="motDePasse"> Mot de passe : </label>
+                        <input type="password" name="motDePasse" id="motDePasse" required />
+                    </p>
+                    <p class ="btn-connecter">
+
+                        <input type="submit" value="Se connecter" name="validation" />
+                    </p>
+                </form>
+				<br>
+				<br>
+				<br>
+				<p> <h4>Utilisez ce lien pour vous inscrire        <a href="inscription.html" target="_blank">    Inscrivez-vous ici</a>  </h4></p>  
+	  </div>
+	
+	  <div class="vp" id="vp">
       <h1>Un groupe <strong>solidaire</strong> pour une communaute forte</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
@@ -50,10 +77,12 @@
         aspernatur aut! Earum nisi vel, omnis aspernatur alias expedita in
         necessitatibus repudiandae dignissimos consectetur sit. Blanditiis ullam
         odit repellendus culpa nemo.
-		
       </p>
+	  </div>
+	  
+	  
     </section>
-    <section class="activites">
+    <section class="activites" id="activites">
       <div>
         <h2>Nos dernieres activites en image</h2>
         <ul class="activites-list">
@@ -115,7 +144,22 @@
         </p>
       </div>
     </section>
-    <footer>
+	<section class="contact bg-dark" id="contact">
+        <form action="#" class="contact-form">
+			
+            <div><h2 class="title">Pour nous <strong>contacter</strong></h2></div>
+			<p>Telephone : 438 764 4740</p>
+			<br>
+            <input type="text" name="name" id="name" placeholder="Nom">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="textarea" name="message" id="message" placeholder="Votre message ...">
+            <div>
+                <button type="submit" class="contact-form-button">Soumettre</button>
+            </div>
+
+        </form>
+    </section>
+    <footer id="#bas_page">
       <a href="#haut_page"
         ><span><i class="fas fa-angle-up"></i></span
       ></a>
