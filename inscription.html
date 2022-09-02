@@ -1,0 +1,81 @@
+<?php
+    include_once 'header.html';
+	include_once 'variablesDeConnexion.php';
+	
+	if(isset($_POST['ok']))
+	{
+		$dbc=mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+		$query = "insert into etudiant (nomUtilisateur, motDePasse, nom, telephone, courriel) 
+		values ('".$_POST['nomUtilisateur']."', '".$_POST['motDePasse']."', '".$_POST['nom']."', '".$_POST['telephone']."', '".$_POST['courriel']."')";
+		$data=mysqli_query($dbc,$query); 
+            if ($data === TRUE) {
+            echo "<p style='color:red'>New record created successfully!!!!!!!!!</p>";
+            } else {
+                    echo "Error: " . $query . "<br>" . $dbc->error;
+                    }
+	}
+?>
+
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Inscription</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+	<br>
+	<br>
+	<br>
+	<h3>Bonjour, merci de vous inscrire sur le site de Solidarité Sakina .</h3>
+	<br>
+	<br>
+	<div class="formulaireInscription">
+		<form name="formulaireInscription" action="" method="post">
+			<fieldset name="InfoPerso" id="InfoPerso">
+			<legend>Informations personnelles</legend>
+			
+			<p>	<input type="radio" id="Monsieur" name="civilite" />
+			<label for="Monsieur">Mr</label>
+				<input type="radio" id="Madame" name="civilite" />
+			<label for="Madame">Mme</label>
+				<input type="radio" id="Mademoiselle" name="civilite" />
+			<label for="Mademoiselle">Mlle</label>
+			</p>
+			<p><label for="nom"> Nom : </label> 	
+			<input type="text" name="nom" id="nom" required />
+            </p>
+			<p><label for="prenom"> Prénom : </label> 	
+			<input type="text" name="prenom" id="prenom" required />
+            </p>
+			<p><label for="pseudo"> Pseudo : </label> 	
+			<input type="text" name="pseudo" id="pseudo" required />
+            </p>
+			<p><label for="motDePasse"> Mot de passe : </label>        	
+			<input type="password" name="motDePasse" id="motDePasse" required />
+            </p>	
+			<p><label for="telephone"> Numéro de téléphone : </label>	
+			<input type="text" name="telephone" id="telephone" required />
+            </p>
+			<p><label for="courriel"> Courriel : </label>
+			<input type="email" name="courriel" id="courriel" required />
+            </p>
+			<input type="submit" value="S'inscrire" name="ok" />
+		
+	</div>
+	
+		
+		
+		
+    </body>
+	
+<?php
+    include_once 'footer.html';
+?>
+	
+</html>
