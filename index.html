@@ -57,7 +57,7 @@
 				<br>
 				<br>
 				<br>
-				<p> <h4>Utilisez ce lien pour vous inscrire        <a href="inscription.html" target="_blank">    Inscrivez-vous ici</a>  </h4></p>  
+				<p> <h4>Nouveau membre ?       <a class ="inscription-link" href="inscription.html" target="_blank">   Inscrivez-vous ici </a>  </h4></p>  
 	  </div>
 	
 	  <div class="vp" id="vp">
@@ -145,16 +145,19 @@
       </div>
     </section>
 	<section class="contact bg-dark" id="contact">
-        <form action="#" class="contact-form">
+        <form action="POST" class="contact-form">
 			
-            <div><h2 class="title">Pour nous <strong>contacter</strong></h2></div>
+            <div><h2 class="title" <strong>contactez nous par téléphone ou par courriel</strong></h2></div>
 			<p>Telephone : 438 764 4740</p>
 			<br>
-            <input type="text" name="name" id="name" placeholder="Nom">
-            <input type="email" name="email" id="email" placeholder="Email">
-            <input type="textarea" name="message" id="message" placeholder="Votre message ...">
+			
+			<input type="text" name="name" id="name" required placeholder="Votre nom et prénoms"><br>
+			
+			<input type="email" name="email" id="email" required placeholder=" Votre émail">  <br>         
+            
+            <textarea rows="10" cols="30" name="message" id="message" required placeholder="Votre message ..."></textarea>
             <div>
-                <button type="submit" class="contact-form-button">Soumettre</button>
+                <button type="submit" class="contact-form-button">Envoyer</button>
             </div>
 
         </form>
