@@ -132,6 +132,10 @@ li {
 	padding: 0 20px 0 20px;
 }
 */
+.inscription-link{
+	color:#CD6155;
+}
+
 .vp {
   display: flex;
   flex-flow: column nowrap;
@@ -242,7 +246,7 @@ li {
     padding: 1rem;
     border: 0;
     border-bottom: 1px solid #555;
-    background: #333;
+    /*background: #333;*/
     font-size: 1rem;
     color: white;
     outline: 0;/*retirer le cadre autour des input- !!!pas recommander*/
@@ -265,11 +269,6 @@ li {
 .contact-form-button:hover {
     background: gray;
 }
-
-
-
-
-
 
 
 /*footer*/
